@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard - KLU Library Hall Booking</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #2e6da4;
+      color: white;
+      padding: 15px;
+      font-size: 22px;
+    }
+    table {
+      margin: 40px auto;
+      border-collapse: collapse;
+      width: 80%;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #e9ecef;
+    }
+    button {
+      background-color: #2e6da4;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #204d74;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Welcome to KLU Library Hall Booking</header>
+
+  <h2>Available Halls</h2>
+
+  <table>
+    <tr>
+      <th>Hall Name</th>
+      <th>Capacity</th>
+      <th>Availability</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Library Hall 1</td>
+      <td>50 Students</td>
+      <td>Available</td>
+      <td><button onclick="bookHall('Library Hall 1')">Book</button></td>
+    </tr>
+    <tr>
+      <td>Library Hall 2</td>
+      <td>30 Students</td>
+      <td>Booked</td>
+      <td><button disabled>Not Available</button></td>
+    </tr>
+    <tr>
+      <td>Library Hall 3</td>
+      <td>80 Students</td>
+      <td>Available</td>
+      <td><button onclick="bookHall('Library Hall 3')">Book</button></td>
+    </tr>
+  </table>
+
+  <script>
+    function bookHall(hallName) {
+      alert("You have booked " + hallName + " successfully! ✅");
+    }
+  </script>
+
+</body>
+</html>
